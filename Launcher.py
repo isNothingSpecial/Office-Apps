@@ -16,7 +16,7 @@ if st.button("Gabungkan PDF"):
         for pdf in uploaded_files:
             merger.append(pdf)
 
-        output_filename = "Laporan_Kinerja_Gabungan.pdf"
+        output_filename = "Hasil_Merge.pdf"
         merger.write(output_filename)
         merger.close()
 
