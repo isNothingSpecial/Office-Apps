@@ -1,3 +1,4 @@
 streamlit==1.41.0
 PyPDF2
+pdf2docx
 streamlit-webrtc
