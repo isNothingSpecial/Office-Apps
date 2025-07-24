@@ -1,61 +1,21 @@
+from streamlit_extras.switch_page_button import switch_page
 import streamlit as st
 
-st.set_page_config(page_title="PDF Tools Dashboard", layout="wide")
-st.markdown("<h1 style='text-align: center;'>📚 PDF Tools Dashboard</h1>", unsafe_allow_html=True)
-st.write("")
+st.set_page_config(page_title="PDF Tools", layout="wide")
+st.markdown("## 📚 PDF Tools Dashboard")
 
-# CSS custom agar tombol terlihat kotak dan rata tengah
-st.markdown("""
-    <style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        justify-items: center;
-        padding: 30px 10px;
-    }
+col1, col2 = st.columns(2)
 
-    .grid-item {
-        background-color: #f1f1f1;
-        border-radius: 16px;
-        width: 150px;
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-        transition: transform 0.2s ease;
-        font-size: 18px;
-    }
+with col1:
+    if st.button("📎 Merge PDF", use_container_width=True):
+        switch_page("Merge_PDF")
 
-    .grid-item:hover {
-        transform: scale(1.05);
-        background-color: #e0e0e0;
-    }
+    if st.button("✂️ Split PDF", use_container_width=True):
+        switch_page("Split_PDF")
 
-    a.card-link {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-    }
-    </style>
-""", unsafe_allow_html=True)
+with col2:
+    if st.button("🗑️ Delete Page", use_container_width=True):
+        switch_page("Delete_Page")
 
-# Grid dengan card link ke halaman lain
-st.markdown("""
-<div class="grid-container">
-    <div class="grid-item">
-        <a class="card-link" href="pages/Merge.py" target="_self">📎<br>Merge PDF</a>
-    </div>
-    <div class="grid-item">
-        <a class="card-link" href="pages/Split.py" target="_self">✂️<br>Split PDF</a>
-    </div>
-    <div class="grid-item">
-        <a class="card-link" href="pages/Delete.py" target="_self">🗑️<br>Delete Page</a>
-    </div>
-    <div class="grid-item">
-        <a class="card-link" href="pages/Word.py" target="_self">📄<br>PDF to Word</a>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+    if st.button("📄 PDF to Word", use_container_width=True):
+        switch_page("PDF_to_Word")
