@@ -46,16 +46,16 @@ st.markdown("""
 st.markdown("""
 <div class="grid-container">
     <div class="grid-item">
-        <a class="card-link" href="pages/Merge" target="_self">📎<br>Merge PDF</a>
+        <a class="card-link" href="pages/Merge.py" target="_self">📎<br>Merge PDF</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="pages/Split" target="_self">✂️<br>Split PDF</a>
+        <a class="card-link" href="pages/Split.py" target="_self">✂️<br>Split PDF</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="pages/Delete" target="_self">🗑️<br>Delete Page</a>
+        <a class="card-link" href="pages/Delete.py" target="_self">🗑️<br>Delete Page</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="pages/Word" target="_self">📄<br>PDF to Word</a>
+        <a class="card-link" href="pages/Word.py" target="_self">📄<br>PDF to Word</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
