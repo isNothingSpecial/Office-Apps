@@ -9,7 +9,7 @@ st.markdown("""
     <style>
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         justify-items: center;
         padding: 30px 10px;
