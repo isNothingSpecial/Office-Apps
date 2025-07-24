@@ -12,7 +12,7 @@ st.markdown("""
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         justify-items: center;
-        padding: 10px 10px;
+        padding: 30px 10px;
     }
 
     .grid-item {
