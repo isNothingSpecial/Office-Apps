@@ -18,8 +18,8 @@ st.markdown("""
     .grid-item {
         background-color: #f1f1f1;
         border-radius: 16px;
-        width: 200px;
-        height: 200px;
+        width: 50px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
