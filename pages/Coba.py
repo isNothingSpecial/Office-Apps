@@ -1,8 +1,8 @@
 from streamlit_extras.switch_page_button import switch_page
 import streamlit as st
 
-st.set_page_config(page_title="PDF Tools", layout="wide")
-st.markdown("## 📚 PDF Tools Dashboard")
+st.set_page_config(page_title="PDF Toolkit", layout="wide")
+st.markdown("## 📚 PDF Toolkit Dashboard")
 
 col1, col2 = st.columns(2)
 
