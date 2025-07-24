@@ -11,9 +11,9 @@ cols = st.columns(2)
 with cols[0]:
     st.page_link("pages/Merge.py", label="Merge PDF", icon="📎")
 
-    st.page_link("pages/Split.py", label="✂️ Split PDF", icon="✂️")
+    st.page_link("pages/Split.py", label="Split PDF", icon="✂️")
 
 with cols[1]:
-    st.page_link("pages/Delete.py", label="🗑️ Delete Page", icon="🗑️")
+    st.page_link("pages/Delete.py", label="Delete Page", icon="🗑️")
 
-    st.page_link("pages/Word.py", label="📄 PDF to Word", icon="📄")
+    st.page_link("pages/Word.py", label="PDF to Word", icon="📄")
