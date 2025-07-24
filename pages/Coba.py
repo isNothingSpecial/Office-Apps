@@ -9,7 +9,7 @@ st.markdown("""
     <style>
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         justify-items: center;
         padding: 30px 10px;
@@ -18,8 +18,8 @@ st.markdown("""
     .grid-item {
         background-color: #f1f1f1;
         border-radius: 16px;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,16 +46,16 @@ st.markdown("""
 st.markdown("""
 <div class="grid-container">
     <div class="grid-item">
-        <a class="card-link" href="/Merge_PDF" target="_self">📎<br>Merge PDF</a>
+        <a class="card-link" href="/pages/Merge" target="_self">📎<br>Merge PDF</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="/Split_PDF" target="_self">✂️<br>Split PDF</a>
+        <a class="card-link" href="/pages/Split" target="_self">✂️<br>Split PDF</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="/Delete_Page" target="_self">🗑️<br>Delete Page</a>
+        <a class="card-link" href="/pages/Delete" target="_self">🗑️<br>Delete Page</a>
     </div>
     <div class="grid-item">
-        <a class="card-link" href="/PDF_to_Word" target="_self">📄<br>PDF to Word</a>
+        <a class="card-link" href="/pages/Word" target="_self">📄<br>PDF to Word</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
