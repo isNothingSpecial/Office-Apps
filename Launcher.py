@@ -9,7 +9,7 @@ st.markdown("Pilih salah satu fitur yang ingin digunakan :")
 cols = st.columns(2)
 
 with cols[0]:
-    st.page_link("pages/Merge.py", label="📎 Merge PDF", icon="📎")
+    st.page_link("pages/Merge.py", label="📎 Merge PDF", icon="")
 
     st.page_link("pages/Split.py", label="✂️ Split PDF", icon="✂️")
 
