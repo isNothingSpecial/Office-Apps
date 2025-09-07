@@ -16,7 +16,7 @@ page_range = st.text_input("Masukkan range halaman (contoh: 1-3):")
 if uploaded_file and page_range and st.button("Split PDF"):
     try:
         start_page, end_page = map(int, page_range.split('-'))
-        if start_page < 1 or end_page < start_page:
+        if start_page <= 1 or end_page < start_page:
             st.error("Rentang halaman tidak valid.")
         else:
             with tempfile.TemporaryDirectory() as tmpdir:
